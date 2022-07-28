@@ -101,8 +101,8 @@ export default class App extends Component{
     return(
         <Calculadora>
           <Titulo>Calculadora</Titulo>
-          <input onChange={this.input1} type="number" />
-          <input onChange={this.input2} type="number" />
+          <input onChange={this.input1} type="number" value = {this.state.inp1} />
+          <input onChange={this.input2} type="number" value = {this.state.inp2} />
           <div>
             <button onClick={this.soma}>+</button>
             <button onClick={this.subtracao}>-</button>
